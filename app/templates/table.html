@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/Table.css">
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  {{ moment.include_jquery() }}
+  {{ moment.include_moment() }}
+</head>
+<body>
+{% include 'includes/_message.html' %}
+<div class="container">
+  <h2>Transaction  {{ id }}</h2>
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Task Description</th>
+        <th>Task Create</th>
+        <th>Task Complete</th>
+        <th>Task Transition</th>
+        <th>Actor</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% if result %}
+      <tr>
+        <td>1</td>
+        <td>{{ result.task_description }}</td>
+        <td>{{ moment(result.task_create).format('LLL') }}</td>
+        <td>{{ moment(result.task_complete).format('LLL') }}</td>
+        <td>{{ result.task_transition }}</td>
+        <td>{{ result.actor }}</td>
+        <td>{{ result.duration }}</td>
+      </tr>
+    {% endif %}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
