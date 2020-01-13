@@ -9,10 +9,10 @@
   {{ moment.include_jquery() }}
   {{ moment.include_moment() }}
 </head>
-<body>
+<body class="bacgrnd">
 {% include 'includes/_message.html' %}
 <div class="container">
-  <h2>Transaction  {{ id }}</h2>
+  <h2>Transaction  {{ id }} {{ result.actor }}</h2>
   <div class="table-responsive">          
   <table class="table">
     <thead>

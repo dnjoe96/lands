@@ -1,28 +1,72 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/Index.css">
-    <title>Lands</title>
-  
-  </head>
-  <body>
-  {% include 'includes/_message.html' %}
-    <form class="form-signin" method="post">
-        <div class="text-center mb-4">
-          <p>Enter the Property ID</p>
-        </div>
-      
-        <div class="form-label-group">
-          <input type="text" name="sourceID" value="" id="inputEmail" class="form-control" placeholder="Property ID" required autofocus>
-        </div>
-        <button class="btn btn-md btn-primary" type="submit">Submit</button>
-      </form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/form.css">
+</head>
+<body>
+<header class="container">
+        <div class="fixed-bg">
+                <div class="ministry">
+                 <div class="mail"><p>minoflands@plateaustate.gov.ng</p></div>   
+                 <div class="number"><p>+2348036092081</p></div>
+                </div>
+                <div class="pywork">{% include 'includes/_message.html' %}</div>
+                <form class="proterty" method="POST">
+                    <div class="header">
+                        <h2>Welcome</h2>
+                        <p>Enter the property ID</p>
+                    </div>
+                
+                    <div class="inside">
+                    <input type="text" name='sourceID' id="inputproperty" placeholder="Property ID">
+                    <br>
+                    <br> 
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+                    
+                    <div class="Briefing">
+                        <h2>Brief on the Mininistry of Land, Suiver and Town Planning:</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolores quis praesentium magni <br>
+                          praesentium magni labore explicabo iste quam iusto are. Voluptates voluptatum praesentium <br>
+                          similique repellat fuga quaerat quod eos cumque. Magnam, repellat voluptatum praesentium.</p>
+                    </div>
+                
+                      <div class="Contact">
+                            <h1>Contact Us</h1>
+                            <hr class="hr">
+                          <div class="Contact-us">
+                            <div class="vl"></div>
+                          <div class="Address">
+                              <h3>Address:</h3>
+                          <h4>2345 Beside ECWA Headquarter along <br>
+                            CBN road Jos, Plateau State.</h4>
+                          </div>
+                          <div class="vl"></div>
+                          <div class="Phone">
+                              <h3>Phone No:</h3>
+                              <h4>08037725692</h4>
+                          </div>
+                          <div class="vl"></div>
+                          <div class="Email">
+                              <h3>Email:</h3>
+                              <i class="fa fa-envelope" style="font-size:32px;"></i>
+                              <h4>Email: loreta@plateaustate.gov.ng</h4>
+                          </div>
+                          <div class="vl"></div>
+                          </div>
+                      </div>
+                
+                      <img src="../static/img/map.png" class="" style="width:100%; height: 500px;">
+                      <footer class="Foot">
+                      <p>&copy; Copy right Ministry of lands, survey and Town Planning</p>
+                      <p>Designed by PICTDA</p>
+                      </footer>
+              </div>
+</header>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+</body>
+</html>   

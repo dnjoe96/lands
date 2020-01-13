@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
 .container h2{
     text-align: center;
@@ -14,5 +19,12 @@
     border: 1px solid black;
     border-collapse: collapse;
     padding: 15px;
-    background-color: whitesmoke;
+}
+
+.table, th{
+    background-color: rgb(161, 160, 160);
+}
+
+.table, td{
+    background-color: rgb(238, 238, 228);
 }
