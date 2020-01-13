@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 
-.fixed-bg {
-    background-color: rgb(250, 232, 185);
-    background-blend-mode: multiply;
+.container{
+    background-image: url(../img/Landscap.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: ghostwhite;
 }
 
-.container{
-    background-image: url(../img/platStet.png);
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.fixed-bg {
+    background-color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .ministry{
@@ -28,16 +30,25 @@
     float: right;
 }
 
+.pywork{
+    text-align: center;
+    padding-top: 10px;
+}
+
 .proterty{
     background-color: white;
-    width: 28%;
-    height: 40vh;
+    width: 20%;
+    height: 38vh;
     margin-top: 50px;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 520px;
     border-radius: 4px;
 }
 
+.inside, input{
+    text-align: center;
+
+}
 .header, h3, p{
     padding-top: 50px;
 }
@@ -60,21 +71,21 @@
 
 
 .Briefing{
-    background-color: rgb(238, 193, 104);
+    /* background-color: rgb(238, 193, 104);
     background-blend-mode: multiply;
     height: 15vh;
-    background-size: cover;
+    background-size: cover; */
     margin-top: 50px;
-    color: black;
+    color: white;
 }
 .Briefing p{
     font-size: 16px;
 }
 
-.Contact{
+/* .Contact{
     background-color: rgb(247, 237, 218);
     background-blend-mode: multiply;
-}
+} */
 .Contact-us{
     display: flex;
     color: black;
@@ -83,14 +94,14 @@
 }
 
 .Contact h1{
-    color: rgb(126, 93, 9);
+    color: white;
 }
 .Contact, .Address, .Phone, .Email{
     padding: 40px;
 }
 
-.Contact h3{
-    color: rgb(126, 93, 9);
+.Contact h3, h4{
+    color: white;
 }
 
 .Contact, h3, p{
@@ -102,7 +113,7 @@
     height: 4px;
 }
 .vl{
-    border-left: 1.3px solid black;
+    border-left: 1.3px solid white;
     height: 200px;
 }
 
