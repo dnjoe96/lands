@@ -29,14 +29,14 @@ def index():
 def transaction(sourceID):
 
     table1meta = MetaData(engine)
-    table1 = Table('lr_transaction', table1meta, autoload=True, autoload_with=engine)
-    table2 = Table('lr_process_history', table1meta, autoload=True, autoload_with=engine)
+    transaction = Table('lr_transaction', table1meta, autoload=True, autoload_with=engine)
+    process_history = Table('lr_process_history', table1meta, autoload=True, autoload_with=engine)
 
-    query1 = select([table1]).where(table1.columns.source_property_ids==sourceID)
+    query1 = select([transaction]).where(transaction.columns.source_property_ids==sourceID)
     result1 = connection.execute(query1).fetchone()
     # print(result1)
 
-    query2 = select([table2]).where(table2.columns.transaction_id==result1.id)
+    query2 = select([process_history]).where(process_history.columns.transaction_id==result1.id)
     result2 = connection.execute(query2).fetchone()
     print(result2)
 
